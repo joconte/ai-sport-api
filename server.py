@@ -1,14 +1,3 @@
-#
-# Name: hand-or-foot
-# Description: A Deep Neural Network powered image classifier, trained to tell the difference between hands and feet
-#              exposed via a web-app. This project has been tested with and deployed by Heroku on a free instance.
-# Author: 0D0AResearch
-# Medium:medium.com/@0D0AResearch
-# Twitter: @0D0AResearch
-# GitHub: github.com/0D0AResearch
-#
-# Special thanks: Lankinen for https://medium.com/@lankinen/fastai-model-to-production-this-is-how-you-make-web-app-that-use-your-model-57d8999450cf
-
 from starlette.applications import Starlette
 from starlette.responses import JSONResponse, HTMLResponse, RedirectResponse
 from fastai.vision import *
