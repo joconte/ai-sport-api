@@ -21,7 +21,7 @@ def predict_image_from_bytes(input_bytes):
 
 
 app = Starlette(debug=True)
-classes = ['baseball', 'basketball', 'football', 'footballamericain', 'golf', 'handball', 'pingpong', 'rugby', 'tennis', 'volleyball']
+classes = ['banana_ok', 'banana_ripe', 'banana_unripe', 'apricot_ok', 'apricot_ripe', 'apricot_unripe', 'strawberry_ok', 'strawberry_ripe', 'strawberry_unripe', 'tomato_ok', 'tomato_ripe', 'tomato_unripe']
 defaults.device = torch.device('cpu')
 learn = load_learner('models')
 
@@ -68,10 +68,10 @@ def form(request):
 
     <div id="blueBox">
     <div style="text-align:center">
-    <h1>BALL SPORT RECOGNIZER - AI</h2>
+    <h1>FRUIT RIPE, UNRIPE, GOOD RECOGNIZER - AI</h2>
 
     <p>
-    <h3>The following sports are availables : football, baseball, handball, volleyball, american football, golf, ping pong, basketball, rugby, tennis</h2>
+    <h3>The following fruits are availables : tomato, banana, apricot, strawberry</h2>
     </div>
     <p>
     <p>
